@@ -1,5 +1,7 @@
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/functionland/anet v0.0.0-20230705195452-f4d9eba7e361 h1:KppTjhsNVDXJIPRMdc7pD9yxhkxBGVKdZSj/pcN+NLk=
+github.com/functionland/anet v0.0.0-20230705195452-f4d9eba7e361/go.mod h1:UbNIaApWNzGf9w7Afkg1SEHvgmxyKFVdYYRQHQG6u70=
 github.com/functionland/anet v0.0.2-0.20230705144238-d8b3b0a8532c h1:YN2DQr+2mptqAGEGPlO886a+5zdp1Drnk7coLjAVOVw=
 github.com/functionland/anet v0.0.2-0.20230705144238-d8b3b0a8532c/go.mod h1:UbNIaApWNzGf9w7Afkg1SEHvgmxyKFVdYYRQHQG6u70=
 github.com/ipfs/go-cid v0.0.7 h1:ysQJVJA3fNDF1qigJbsSQOdjhVLsOEoPdh0+R97k3jY=

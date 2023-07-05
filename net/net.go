@@ -10,7 +10,6 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/functionland/anet"
 	ma "github.com/multiformats/go-multiaddr"
 )
 
@@ -384,26 +383,6 @@ func WrapPacketConn(pc net.PacketConn) (PacketConn, error) {
 		PacketConn: pc,
 		laddr:      laddr,
 	}, nil
-}
-
-// InterfaceMultiaddrs will return the addresses matching net.InterfaceAddrs
-func InterfaceMultiaddrs() ([]ma.Multiaddr, error) {
-	addrs, err := net.InterfaceAddrs()
-	if err != nil {
-		addrs, err = anet.InterfaceAddrs()
-		if err != nil {
-			return nil, err
-		}
-	}
-
-	maddrs := make([]ma.Multiaddr, len(addrs))
-	for i, a := range addrs {
-		maddrs[i], err = FromNetAddr(a)
-		if err != nil {
-			return nil, err
-		}
-	}
-	return maddrs, nil
 }
 
 // AddrMatch returns the Multiaddrs that match the protocol stack on addr
