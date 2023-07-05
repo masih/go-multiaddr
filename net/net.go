@@ -10,6 +10,7 @@ import (
 	"fmt"
 	"net"
 
+	"github.com/functionland/anet"
 	ma "github.com/multiformats/go-multiaddr"
 )
 
@@ -389,7 +390,10 @@ func WrapPacketConn(pc net.PacketConn) (PacketConn, error) {
 func InterfaceMultiaddrs() ([]ma.Multiaddr, error) {
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
-		return nil, err
+		addrs, err = anet.InterfaceAddrs()
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	maddrs := make([]ma.Multiaddr, len(addrs))

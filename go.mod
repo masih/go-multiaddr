@@ -13,6 +13,7 @@ require (
 
 require (
 	github.com/davecgh/go-spew v1.1.0 // indirect
+	github.com/functionland/anet v0.0.2-0.20230705144238-d8b3b0a8532c // indirect
 	github.com/minio/blake2b-simd v0.0.0-20160723061019-3f5f724cb5b1 // indirect
 	github.com/minio/sha256-simd v0.1.1-0.20190913151208-6de447530771 // indirect
 	github.com/mr-tron/base58 v1.1.3 // indirect
