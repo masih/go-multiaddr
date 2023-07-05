@@ -6,6 +6,7 @@
 package manet
 
 import (
+	"fmt"
 	"net"
 
 	"github.com/functionland/anet"
@@ -18,7 +19,7 @@ func InterfaceMultiaddrs() ([]ma.Multiaddr, error) {
 	if err != nil {
 		addrs, err = anet.InterfaceAddrs()
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("trying anet also failed: %w", err)
 		}
 	}
 
